@@ -19,8 +19,11 @@ void    push_chunks_to_b(t_stack **stack_a, t_stack **stack_b, int size)
     chunk_size = size/5;
     limit = chunk_size;
     pushed = 0;
-    while (!*stack_a && size > 0)
+    while (!stack_a || !(*stack_a) || size > 0)
     {
+        if((*stack_a)->index < limit)
+        
 
     }
+        return ;
 }
